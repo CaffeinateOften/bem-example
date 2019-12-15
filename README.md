@@ -1,3 +1,3 @@
 # bem-example
 
-![](img/sign-in-screen-experiment2.gif)
+![](img/sign-in-screen.gif)
