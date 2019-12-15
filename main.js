@@ -10,10 +10,10 @@ function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     frame: false,
-    resizable: false,
+    resizable: isDebugMode(),
     width: 1000,
     height: 365,
-    icon: __dirname+`/img/cappucino.${process.env.platform === 'darwin' ? 'svg' : 'icns'}`,
+    icon: __dirname+'/img/cappucino.png',
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
@@ -22,7 +22,7 @@ function createWindow () {
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
 
-  if (process.env.BEM_EXAMPLE_DEBUG && process.env.BEM_EXAMPLE_DEBUG.toLowerCase() === 'true'){
+  if (isDebugMode()){
     mainWindow.webContents.openDevTools()
   }
 
@@ -55,3 +55,7 @@ app.on('activate', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+function isDebugMode(){
+  return process.env.BEM_EXAMPLE_DEBUG && process.env.BEM_EXAMPLE_DEBUG.toLowerCase() === 'true'
+}
