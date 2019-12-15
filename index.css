@@ -59,7 +59,7 @@ html{
     margin-bottom: 15px;
     padding-left: 10px;
     background-color: #ededed;
-    border-radius: 7px;
+    border-radius: 4px;
     border-style: none;
 }
 .c-sign-in__text-input:hover{
@@ -80,9 +80,11 @@ html{
 .c-sign-in__submit-input{
     position: relative;
     margin-top: 18px;
-    width: 60px;
+    width: 80px;
     height: 40px;
-    border-radius: 30%
+    border-color: #dfdfdf;
+    border-radius: 10px;
+    background-color: #F9F9F9
 }
 .c-sign-in__right-arrow{
     position: absolute;
