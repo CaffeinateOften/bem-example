@@ -5,18 +5,32 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com/; font-src https://fonts.gstatic.com/">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" type="text/css" rel="stylesheet">
     <link href="index.css" type="text/css" rel="stylesheet">
-
-    <title>Hello, world!</title>
   </head>
-  <body class='app'>
-    <h1 class="lato">Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-    
+  <body class="t-lol c-app">
+    <div class="l-grid--2-fixed-col">
+      <div class="c-sign-in">
+        <div class="c-sign-in__header">
+          <div class="l-flex--space-between">
+              <img class="c-sign-in__icon" src="img/cappuccino.png" />
+              <div>placeholder txt</div>
+          </div>
+        </div>
+        <form class="c-sign-in__form">
+          <h1 class="c-sign-in__title">
+            SIGN IN
+          </h1>
+          <div class="l-flex--column">
+            <label for="" class="c-sign-in__label"></label>
+            <input class="c-sign-in__input" placeholder="USERNAME" type="text" id="username" name="username">
+            <input class="c-sign-in__input" placeholder="PASSWORD" type="password" id="password" name="password">
+          </div>
+        </form>
+        <div class="c-sign-in__footer"></div>
+      </div>
+      <img class="c-splash-wallpaper" src="./img/animated-landscape.gif" alt="beautiful landscape" />
+    </div>
     <script src="./renderer.js"></script>
   </body>
 </html>

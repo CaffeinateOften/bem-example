@@ -1,4 +1,61 @@
-.app {
+html{
+    height: 100%;
+    width: 100%;
+}
+/*
+    Namespacing inspired from: https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/
+    Key:
+        l- layout
+        t- theme
+        c- component
+*/
+.t-lol{
     font-family: 'Lato';
+    background-color: #F9F9F9;
+    color: black;
 }
 
+.c-app{
+    -webkit-app-region: drag;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0px;
+}
+
+.l-grid--2-fixed-col{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 500px 800px;
+}
+
+.l-flex--space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.l-flex--column{
+    display: flex;
+    flex-direction: column;
+}
+
+.c-sign-in{
+    padding: 60px;
+}
+.c-sign-in__icon{
+    margin-top: -10px;
+    width: 50px;
+}
+.c-sign-in__title{
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.c-sign-in__input{
+    height: 40px;
+    margin-bottom: 20px;
+}
+.c-splash-wallpaper{
+    width: 100%;
+}

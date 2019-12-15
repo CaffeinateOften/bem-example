@@ -9,8 +9,10 @@ let mainWindow
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
+    frame: false,
+    resizable: false,
     width: 1000,
-    height: 800,
+    height: 365,
     icon: __dirname+`/img/cappucino.${process.env.platform === 'darwin' ? 'svg' : 'icns'}`,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
