@@ -1,0 +1,26 @@
+{
+  "name": "bem-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "debug": "BEM_EXAMPLE_DEBUG=true electron .",
+    "package:macos": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=img/cappuccino-white-steam.icns --prune=true --out=release-builds"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaffeinateOften/bem-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaffeinateOften/bem-example/issues"
+  },
+  "homepage": "https://github.com/CaffeinateOften/bem-example#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^7.1.5",
+    "electron-packager": "^14.1.1"
+  }
+}
